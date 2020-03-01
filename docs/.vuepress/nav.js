@@ -1,13 +1,36 @@
 module.exports = [
     {
-        text: '首页', link: '/guide/'
+        text: '首页', link: '/'
+    },
+    {
+        text: '学习笔记',
+        items: [
+            {
+                text:'JavaSE',
+                items:[
+                    {text: 'Java基础',link: '/notes/javase/'}
+                ]
+            },
+            {
+                text:'搜索相关',
+                items:[
+                    {text: 'Elasticsearch',link: '/notes/es/'}
+                ]
+            }
+        ]
+    },
+    {
+        text: 'Blog',link: '/blog/'
+    },
+    {
+        text: '阅读',link: '/read/'
+    },
+    {
+        text: '网站推荐',link: '/website-rec/'
     },
     {
         text: '面试宝典', link: '/baodian/',
-		items: [
-            {text: '初级开发篇', link: '/baodian/zero/'},
-            {text: '中高进阶篇', link: '/baodian/high/'},
-        ]
+        link: '/baodian/'
     },
     {
         text: '工具箱',
